@@ -10,10 +10,13 @@ namespace recipe
 
             builder.Services.AddControllers();
 
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -21,6 +24,13 @@ namespace recipe
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+
+
+
+
+
+
 
             app.UseHttpsRedirection();
 
